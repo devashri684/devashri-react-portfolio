@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/devashri-react-portfolio/static/css/main.9ee3e91c.css",
+    "main.js": "/devashri-react-portfolio/static/js/main.2c1cbd7a.js",
+    "static/css/64.bba8fa55.chunk.css": "/devashri-react-portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/devashri-react-portfolio/static/js/64.56dc6704.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/devashri-react-portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.bda0d7b7.chunk.js": "/devashri-react-portfolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/Project1.webp": "/devashri-react-portfolio/static/media/Project1.4b8e9d3c171e43ea2adc.webp",
+    "static/media/Project2.png": "/devashri-react-portfolio/static/media/Project2.12be3647a617e1a60bc7.png",
+    "static/media/Montserrat-Regular.ttf": "/devashri-react-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/myprofile.png": "/devashri-react-portfolio/static/media/myprofile.689a9032c5787d3a8005.png",
+    "static/media/Agustina.woff": "/devashri-react-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/manOnTable.svg": "/devashri-react-portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/quoraLogo.png": "/devashri-react-portfolio/static/media/quoraLogo.85eb29f4d52320c8ed99.png",
+    "static/media/developerActivity.svg": "/devashri-react-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/airbnbLogo.png": "/devashri-react-portfolio/static/media/airbnbLogo.e8497507db673acd3991.png",
+    "static/media/hackthon.jpg": "/devashri-react-portfolio/static/media/hackthon.634e685fb9c2137a0314.jpg",
+    "static/media/facebookLogo.png": "/devashri-react-portfolio/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
+    "static/media/skill.svg": "/devashri-react-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/devashri-react-portfolio/index.html",
+    "main.9ee3e91c.css.map": "/devashri-react-portfolio/static/css/main.9ee3e91c.css.map",
+    "main.2c1cbd7a.js.map": "/devashri-react-portfolio/static/js/main.2c1cbd7a.js.map",
+    "64.bba8fa55.chunk.css.map": "/devashri-react-portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/devashri-react-portfolio/static/js/64.56dc6704.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/devashri-react-portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.bda0d7b7.chunk.js.map": "/devashri-react-portfolio/static/js/769.bda0d7b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ee3e91c.css",
+    "static/js/main.2c1cbd7a.js"
+  ]
+}
