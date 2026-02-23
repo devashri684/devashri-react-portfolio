@@ -1,0 +1,72 @@
+@import "../../_globalColor";
+
+.youtube-main-div {
+  width: 100%;
+}
+
+.youtube-header {
+  margin-bottom: 1.5rem;
+}
+
+.youtube-title {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.youtube-subtitle {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.youtube-details {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.youtube-card {
+  background-color: $lightBackground2;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+}
+
+.youtube-card-dark {
+  background-color: $darkBackground;
+  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+}
+
+@media (max-width: 1380px) {
+  .youtube-title {
+    font-size: 40px;
+  }
+  .youtube-details {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .youtube-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .youtube-details {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .youtube-card {
+    padding: 1.25rem;
+  }
+}

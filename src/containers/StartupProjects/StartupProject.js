@@ -39,20 +39,38 @@ export default function StartupProject() {
                   key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? `dark-mode project-card project-card-dark ${
+                          i === 1 ? "project-card-large" : ""
+                        }`
+                      : `project-card project-card-light ${
+                          i === 1 ? "project-card-large" : ""
+                        }`
                   }
                 >
                   {project.image ? (
-                    <div className="project-image">
+                    <div
+                      className={
+                        i === 1
+                          ? "project-image project-image-large"
+                          : "project-image"
+                      }
+                    >
                       <img
                         src={project.image}
                         alt={project.projectName}
-                        className="card-image"
+                        className={
+                          i === 1 ? "card-image card-image-large" : "card-image"
+                        }
                       ></img>
                     </div>
                   ) : null}
-                  <div className="project-detail">
+                  <div
+                    className={
+                      i === 1
+                        ? "project-detail project-detail-large"
+                        : "project-detail"
+                    }
+                  >
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >

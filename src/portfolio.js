@@ -16,30 +16,27 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Devashri",
+  title: "Hi,I'm Devashri",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    `A passionate Full Stack Developer 🚀 with a strong academic background (CGPA 9.05) and Honors in IoT, driven to build impactful and scalable software solutions.
+
+I specialize in Java, SQL, React, and RESTful APIs, and I enjoy developing responsive web applications and IoT-integrated systems that solve real-world problems with clean architecture and efficient design.`
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // github: "https://github.com/devashri684",
+  linkedin: "https://www.linkedin.com/in/devashri-rewanwar-281a64259/",
+  gmail: "devashrirewanwar@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -117,32 +114,46 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
+// Education Section
+
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Walchand Institute of Technology, Solapur",
+      logo: require("./assets/images/witLogo.png"), 
+      subHeader: "B-Tech in Electronics & Telecommunication Engineering | IoT Honors",
+      duration: "2022 – 2026",
+      desc: "Currently pursuing B-Tech with a strong academic record.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "CGPA: 9.05",
+        "Focused on IoT systems, full stack development, and core electronics subjects"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "K.D. High School, Pusad",
+      // logo: require("./assets/images/schoolLogo.png"),
+      subHeader: "Class X",
+      duration: "2019 – 2020",
+      desc: "Completed secondary education with distinction.",
+      descBullets: [
+        "Percentage: 91.20%"
+      ]
+    },
+    {
+      schoolName: "K.D. High School and G.M. Junior College, Pusad",
+      // logo: require("./assets/images/juniorCollegeLogo.png"),
+      subHeader: "Class XII",
+      duration: "2021 – 2022",
+      desc: "Completed higher secondary education.",
+      descBullets: [
+        "Percentage: 71.50%"
+      ]
     }
   ]
 };
@@ -150,7 +161,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -171,7 +182,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
@@ -212,97 +223,53 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "SOME OF THE IMPACTFUL PROJECTS I HAVE BUILT",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/Project1.webp"),
+      projectName: "Smart Autonomous Agricultural Disease Detection",
+      projectDesc:
+        "Engineered an AI-enabled autonomous agricultural system for tomato plant disease detection using deep learning and computer vision (Python, TensorFlow). Designed scalable architecture integrating IoT sensors, camera modules, ESP32/Raspberry Pi, and real-time data pipelines. Implemented crop health analytics, grid-based field mapping, and precision spraying automation for smart farming."
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+     image: require("./assets/images/Project2.png"),
+      projectName: "Weather Dashboard Web Application",
+      projectDesc:
+        "Built a real-time weather dashboard using REST APIs with dynamic data rendering. Designed a responsive, cross-browser compatible UI using modern frontend practices in React. Optimized performance and implemented a clean component-based architecture for scalable development."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Extracurricular Activities 🏆"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Competitions, Hackathons, and Leadership Experiences that showcase my skills beyond academics.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "1st Prize – Intercollege UI/UX Competition",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Secured first place for designing an intuitive, user-centric interface in a competitive design event. Demonstrated strong problem-solving, creativity, and user experience design principles.",
+      image: require("./assets/images/Figma-Logo.png"),
+      imageAlt: "UI UX Competition Logo",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
+      title: "Hackathon Participant",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+        "Participated in 2+ hackathons, collaborating in fast-paced environments to develop innovative technology solutions under strict time constraints.",
+      image: require("./assets/images/hackthon.jpg"),
+      imageAlt: "Hackathon Logo",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
 // Blogs Section
 
 const blogSection = {
@@ -324,7 +291,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +310,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -351,12 +318,22 @@ const talkSection = {
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
+  
   // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
+
+// YouTube / Content Creation Section
+
+const youtubeSection = {
+  title: "Technical Content Creation 🎥",
+  subtitle:   "  Sharing knowledge and simplifying technology for learners.",
+  display: true,
+  details:
+    "Currently building my journey as a technical content creator, sharing educational tech videos."
 };
 
 // Resume Section
@@ -365,22 +342,20 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: "Let's Connect 🤝",
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "I am actively seeking opportunities in software development and IoT-based systems. Whether it's a project collaboration, internship, or full-time role — my inbox is always open.",
+  email_address: "devashrirewanwar@gmail.com"
 };
-
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -400,6 +375,7 @@ export {
   blogSection,
   talkSection,
   podcastSection,
+  youtubeSection,
   contactInfo,
   twitterDetails,
   isHireable,

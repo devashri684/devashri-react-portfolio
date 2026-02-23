@@ -1,84 +1,64 @@
-import React, {useState, createRef} from "react";
+import React from "react";
 import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
+import {Fade} from "react-reveal";
 
 export default function ExperienceCard({cardInfo, isDark}) {
-  const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
-
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+  if (!cardInfo) {
+    return null;
   }
 
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
+  const {company, role, date, desc, companylogo, descBullets} = cardInfo;
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
+  const hasBullets = Array.isArray(descBullets) && descBullets.length > 0;
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+    <Fade bottom duration={1000} distance="20px">
+      <div
+        className={
+          isDark ? "experience-card experience-card-dark" : "experience-card"
+        }
+      >
+        <div className="experience-card-header">
+          {companylogo && (
+            <img
+              className="experience-card-logo"
+              src={companylogo}
+              alt={company || "company"}
+            />
+          )}
+          <div className="experience-card-header-text">
+            {role && <h3 className="experience-card-role">{role}</h3>}
+            {company && <h4 className="experience-card-company">{company}</h4>}
+            {date && (
+              <p
+                className={
+                  isDark
+                    ? "experience-card-date dark-mode"
+                    : "experience-card-date"
+                }
+              >
+                {date}
+              </p>
+            )}
+          </div>
         </div>
 
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
+        {desc && (
+          <p className={isDark ? "experience-card-desc dark-mode" : "experience-card-desc"}>
+            {desc}
+          </p>
+        )}
+
+        {hasBullets && (
+          <ul className="experience-card-bullets">
+            {descBullets.map((bullet, i) => (
+              <li key={i} className={isDark ? "dark-mode subTitle" : "subTitle"}>
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-      <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
-      </div>
-    </div>
+    </Fade>
   );
 }

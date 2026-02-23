@@ -49,13 +49,20 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 34px;
+  white-space: pre-line;
 }
 
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .wave-emoji {
@@ -96,7 +103,7 @@
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -117,6 +124,7 @@
   }
   .greeting-image-div {
     height: 256px;
+    justify-content: center;
   }
 }
 
